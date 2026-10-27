@@ -52,6 +52,8 @@
 .route-step > span { color: var(--coral); font: 700 12pt var(--sans); letter-spacing: .1em; }
 .route-step h3 { font-family: var(--serif); font-size: 23pt; margin: 17px 0 11px; }
 .route-step p { color: var(--muted); font-size: 15pt; }
+.outline-visual { align-self: center; margin: 23px 0 0; max-width: 1000px; width: 88%; }
+.outline-visual img { aspect-ratio: 5 / 1; display: block; object-fit: contain; width: 100%; }
 .callout { background: #e2eee7; border-left: 5px solid var(--teal); font-size: 18pt !important; font-weight: 700; margin-top: 28px !important; padding: 17px 23px; }
 
 .grid-2 { align-items: stretch; display: grid; grid-template-columns: .85fr 1.15fr; gap: 34px; }
@@ -161,6 +163,9 @@
 .authoring-flow .authoring-dest > span { color: #9dd3c7; }
 .authoring-flow code { background: #eee9df; font-size: .9em; }
 .authoring-flow > i { align-self: center; color: var(--coral); font: normal 19pt var(--serif); }
+.authoring-image { align-self: center; margin: 15px 0 0; max-width: 570px; width: 60%; }
+.authoring-image img { border: 1px solid var(--line); box-shadow: 0 5px 16px rgba(24, 43, 54, .12); display: block; height: auto; width: 100%; }
+.authoring-image figcaption { color: var(--muted); font-size: 10pt; line-height: 1.3; margin-top: 6px; text-align: center; }
 .authoring-callout { font-size: 14pt !important; margin-top: 22px !important; }
 
 .guardrails { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }

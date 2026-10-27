@@ -28,6 +28,11 @@
           <article class="route-step"><span>02</span><h3>The method</h3><p>Use SIFT to slow down and follow evidence.</p></article>
           <article class="route-step"><span>03</span><h3>The process</h3><p>Study a published check, then try a manual and AI-assisted workflow.</p></article>
         </div>
+        <figure class="outline-visual">
+          <a href="https://ulysseus.eu/metacog/" target="_blank" rel="noreferrer">
+            <img src="https://ulysseus.eu/wp-content/uploads/2025/03/Metacog-1300X260.svg" alt="METACOG project banner" />
+          </a>
+        </figure>
         <aside class="notes">1:15. Set expectations. Fact-checking tests factual statements against evidence. It cannot settle a value judgment or predict the future with certainty. The same evidentiary standard should apply regardless of who makes the claim.</aside>
       </section>
 
@@ -163,8 +168,12 @@
           <i>→</i>
           <article><span>03 · BUILD</span><h3>Generate the skill</h3><p>Have it create <code>SKILL.md</code>, references and examples; review the result.</p></article>
           <i>→</i>
-          <article class="authoring-dest"><span>04 · REUSE</span><h3>Load it where supported</h3><p>Coding agent: use the skill folder.<br>ChatGPT web: package it as a plugin.</p></article>
+          <article class="authoring-dest"><span>04 · REUSE</span><h3>Load it where supported</h3><p> Save the repository as ZIP archive. Load the ZIP archive in ChatGPT - Plugins - Skills - Add - Upload from your computer.  </p></article>
         </div>
+        <figure class="authoring-image">
+          <img src="addskills.png" alt="ChatGPT Skills page with the Add menu open, showing options to create a skill with chat, create with the editor, or upload from a computer." />
+          <figcaption>ChatGPT Skills: create with chat, use the editor, or upload a skill.</figcaption>
+        </figure>
         <p class="callout authoring-callout">The skill supplies the workflow. Each host still determines which tools and access the agent has.</p>
         <p class="source-line"><a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noreferrer">ChatGPT Learn: build skills and use them across ChatGPT and Codex ↗</a></p>
         <aside class="notes">1:00. This is a meta-instruction workflow: use one coding agent to turn your requirements into reusable instructions for another. Start from an empty GitHub repository, tell Copilot what the skill should do and how it should behave, then inspect and refine the generated files. A compatible coding agent can load the skill folder. For ChatGPT on the web, package it as a plugin and install it where that workflow is available. The skill does not itself grant tools or repository access; the host controls those.</aside>
