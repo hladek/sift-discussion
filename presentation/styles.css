@@ -62,16 +62,18 @@
 .stack-list p { background: var(--paper-bright); border: 1px solid var(--line); font-size: 14pt; padding: 12px 17px; }
 .stack-list b { color: var(--teal); font-size: 15pt; }
 
+.sift-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 10px; }
+.sift-grid article { background: var(--paper-bright); border: 1px solid var(--line); min-height: 260px; padding: 20px 18px; }
+.sift-grid article > strong { color: var(--coral); display: block; font: 700 36pt var(--serif); margin-bottom: 16px; }
+.sift-grid h3 { color: var(--teal); font-size: 16pt; }
+.sift-grid p { color: var(--muted); font-size: 13.5pt; }
+
 .case-banner { align-items: center; background: var(--ink); display: flex; gap: 22px; padding: 24px 28px; }
 .case-mark { align-items: center; background: var(--coral); border-radius: 50%; color: white; display: flex; flex: 0 0 55px; font: 700 26pt var(--serif); height: 55px; justify-content: center; }
 .reveal .case-title { color: var(--paper-bright); font: 23pt var(--serif); }
 .reveal .case-meta { color: #b9c9c4; font-size: 12pt; margin-top: 8px; }
 .case-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 27px; }
 .case-columns p { background: var(--paper-bright); border-left: 4px solid var(--teal); font-size: 16pt; padding: 22px; }
-.sift-steps { gap: 16px 30px; }
-.sift-steps article { background: var(--paper-bright); border-left: 4px solid var(--teal); padding: 18px 22px; }
-.sift-steps h3 { color: var(--teal); font-size: 16pt; margin-bottom: 8px; }
-.sift-steps p { background: none; border: 0; font-size: 14pt; padding: 0; }
 
 .claim-card { background: var(--paper-bright); border: 1px solid var(--line); border-left: 6px solid var(--coral); padding: 23px 28px; }
 .reveal .claim-label { color: var(--coral); font: 700 10pt var(--sans); letter-spacing: .12em; }
@@ -128,10 +130,10 @@
 @media (max-width: 800px) {
   .reveal .slides section { padding: 35px 38px 45px !important; }
   .reveal h2 { font-size: 29pt; }
-  .route { gap: 10px; }
+  .route, .sift-grid { gap: 10px; }
   .route-step { min-height: 170px; padding: 15px; }
   .route-step h3 { font-size: 18pt; }
-  .route-step p { font-size: 11pt; }
+  .route-step p, .sift-grid p { font-size: 11pt; }
   .flow { gap: 4px; }
   .flow-step { padding: 9px; }
   .flow-step small { font-size: 9.5pt; }
