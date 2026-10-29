@@ -3,6 +3,7 @@ ChatGPT Skill that helps with assessment of facts in political discussions, base
 
 ## Contents
 
+- [The presentation](/presentation)
 - `skills/sift-discussion/SKILL.md` – the skill (instructions and output format)
 - `skills/sift-discussion/references/manipulation-techniques.md` – reference list of rhetorical/manipulation techniques
 
