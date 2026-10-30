@@ -164,7 +164,7 @@
       </section>
 
       <section id="skill-authoring">
-        <p class="eyebrow">07 · ASK AN AGENT TO WRITE A SKILL · 1:00</p>
+        <p class="eyebrow">07 · ASK AN AGENT TO WRITE A SKILL · 0:30</p>
         <h2>Use a coding agent to create a reusable skill</h2>
         <div class="authoring-flow">
           <article><span>01 · START</span><h3>Empty GitHub repo</h3><p>Start with a repository for the skill and its supporting files.</p></article>
@@ -172,13 +172,24 @@
           <article><span>02 · INSTRUCT</span><h3>Brief Copilot agent</h3><p>Describe the goal, trigger, steps, expected output and boundaries.</p></article>
           <i>→</i>
           <article><span>03 · BUILD</span><h3>Generate the skill</h3><p>Have it create <code>SKILL.md</code>, references and examples; review the result.</p></article>
-          <i>→</i>
-          <article class="authoring-dest"><span>04 · REUSE</span><h3>Load it where supported</h3><p>Package the skill as a ZIP. In ChatGPT, open Plugins → Skills → Create → Upload from your computer.</p></article>
         </div>
         <div class="authoring-example">
           <div class="authoring-prompt">
             <p class="output-label">EXAMPLE PROMPT</p>
             <p>“Prepare a repository that contains a skill that can be used from the ChatGPT web interface. The skill should help users assess facts and messages from political discussions.”</p>
+          </div>
+        </div>
+        <aside class="notes">0:30. Use a coding agent to turn your requirements into reusable instructions. Start with a GitHub repository, describe the skill’s purpose, when it should be used, its steps and expected output, then review the generated files.</aside>
+      </section>
+
+      <section id="chatgpt-loading">
+        <p class="eyebrow">07 · LOAD THE SKILL IN CHATGPT · 0:30</p>
+        <h2>Load your skill in ChatGPT</h2>
+        <div class="chatgpt-loading-layout">
+          <div class="skill-sequence">
+            <p><b>01 · Package</b><span>Package the skill folder as a ZIP.</span></p>
+            <p><b>02 · Open Skills</b><span>In ChatGPT, open Plugins → Skills → Create.</span></p>
+            <p><b>03 · Upload</b><span>Choose Upload from your computer and select the skill ZIP.</span></p>
           </div>
           <figure class="authoring-image">
             <img src="addskills.png" alt="ChatGPT Skills page with the Add menu open, showing options to create a skill with chat, create with the editor, or upload from a computer." />
@@ -187,7 +198,7 @@
         </div>
         <p class="callout authoring-callout">The skill supplies the workflow. Each host still determines which tools and access the agent has.</p>
         <p class="source-line"><a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noreferrer">ChatGPT Learn: build skills and use them across ChatGPT and Codex ↗</a></p>
-        <aside class="notes">1:00. Use a coding agent to turn your requirements into reusable instructions. Start with a GitHub repository, describe the skill’s purpose, when it should be used, its steps and expected output, then review the generated files. Compatible agents can load a skill folder. In ChatGPT, open Plugins, choose Skills, select Create, then Upload from your computer and upload the skill ZIP. Availability and permissions can depend on the account or workspace. A skill does not itself grant tools or repository access; the host controls those.</aside>
+        <aside class="notes">0:30. Compatible agents can load a skill folder. In ChatGPT, open Plugins, choose Skills, select Create, then Upload from your computer and upload the skill ZIP. Availability and permissions can depend on the account or workspace. A skill does not itself grant tools or repository access; the host controls those.</aside>
       </section>
 
 
