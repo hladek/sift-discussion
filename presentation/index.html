@@ -186,17 +186,20 @@
         <p class="eyebrow">07 · LOAD THE SKILL IN CHATGPT · 0:30</p>
         <h2>Load your skill in ChatGPT</h2>
         <div class="chatgpt-loading-layout">
-          <div class="skill-sequence">
-            <p><b>01 · Package</b><span>Package the skill folder as a ZIP.</span></p>
-            <p><b>02 · Open Skills</b><span>In ChatGPT, open Plugins → Skills → Create.</span></p>
-            <p><b>03 · Upload</b><span>Choose Upload from your computer and select the skill ZIP.</span></p>
-          </div>
+          <ol class="loading-steps">
+            <li><span class="loading-step-number" aria-hidden="true">01</span><div><b>Package</b><p>Package the skill folder as a ZIP.</p></div></li>
+            <li><span class="loading-step-number" aria-hidden="true">02</span><div><b>Open Skills</b><p>In ChatGPT, open Plugins → Skills → Create.</p></div></li>
+            <li><span class="loading-step-number" aria-hidden="true">03</span><div><b>Upload</b><p>Choose Upload from your computer and select the skill ZIP.</p></div></li>
+          </ol>
           <figure class="authoring-image">
             <img src="addskills.png" alt="ChatGPT Skills page with the Add menu open, showing options to create a skill with chat, create with the editor, or upload from a computer." />
             <figcaption>ChatGPT Skills: create with chat, use the editor, or upload a skill.</figcaption>
           </figure>
         </div>
-        <p class="callout authoring-callout">The skill supplies the workflow. Each host still determines which tools and access the agent has.</p>
+        <div class="authoring-prompt loading-prompt">
+          <p class="output-label">EXAMPLE PROMPT · CLAUDE CODE</p>
+          <p>“Install the skill from https://github.com/hladek/sift-discussion. Copy the <code>skills/sift-discussion</code> folder into <code>~/.claude/skills/sift-discussion</code>, including its references, so I can use it across projects.”</p>
+        </div>
         <p class="source-line"><a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noreferrer">ChatGPT Learn: build skills and use them across ChatGPT and Codex ↗</a></p>
         <aside class="notes">0:30. Compatible agents can load a skill folder. In ChatGPT, open Plugins, choose Skills, select Create, then Upload from your computer and upload the skill ZIP. Availability and permissions can depend on the account or workspace. A skill does not itself grant tools or repository access; the host controls those.</aside>
       </section>

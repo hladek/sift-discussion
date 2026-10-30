@@ -164,14 +164,21 @@
 .authoring-flow code { background: #eee9df; font-size: .9em; }
 .authoring-flow > i { align-self: center; color: var(--coral); font: normal 19pt var(--serif); }
 .authoring-example { margin-top: 24px; }
-.chatgpt-loading-layout { align-items: center; display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; }
+.chatgpt-loading-layout { align-items: center; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 28px; flex: 1; min-height: 0; }
+.reveal .loading-steps { display: grid; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.loading-steps li { align-items: flex-start; display: flex; gap: 13px; }
+.loading-step-number { align-items: center; background: #e2eee7; border: 1px solid #c4dcd1; border-radius: 50%; color: var(--teal); display: flex; flex: 0 0 36px; font: 700 11pt var(--sans); height: 36px; justify-content: center; }
+.loading-steps li:last-child .loading-step-number { background: var(--teal); border-color: var(--teal); color: var(--paper-bright); }
+.loading-steps b { display: block; font-size: 16pt; margin: 4px 0 6px; }
+.reveal .loading-steps p { color: var(--muted); font-size: 12.5pt; line-height: 1.4; }
 .authoring-prompt { background: var(--paper-bright); border-left: 4px solid var(--coral); padding: 16px 19px; }
 .reveal .authoring-prompt .output-label { color: var(--coral); font: 700 10pt var(--sans); letter-spacing: .1em; margin-bottom: 10px; }
 .authoring-prompt p { font-size: 14pt; line-height: 1.4; }
-.authoring-image { justify-self: center; margin: 0; max-width: 400px; width: 100%; }
-.authoring-image img { border: 1px solid var(--line); box-shadow: 0 5px 16px rgba(24, 43, 54, .12); display: block; height: auto; width: 100%; }
-.authoring-image figcaption { color: var(--muted); font-size: 10pt; line-height: 1.3; margin-top: 6px; text-align: center; }
-.authoring-callout { font-size: 14pt !important; margin-top: 22px !important; }
+.authoring-image { box-sizing: border-box; background: var(--paper-bright); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 30px rgba(24, 43, 54, .1); margin: 0; padding: 10px; width: 100%; }
+.authoring-image img { border-radius: 5px; display: block; height: auto; width: 100%; }
+.authoring-image figcaption { color: var(--muted); font-size: 10pt; line-height: 1.3; padding: 10px 5px 2px; text-align: center; }
+.loading-prompt { margin-top: 18px; }
+.loading-prompt p { font-size: 13pt; }
 
 .guardrails { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
 .guardrails > div { align-items: flex-start; background: var(--paper-bright); border: 1px solid var(--line); display: flex; gap: 15px; padding: 17px; }
