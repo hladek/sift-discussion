@@ -1,8 +1,12 @@
 # sift-discussion
+\
 ChatGPT Skill that helps with assessment of facts in political discussions, based on the SIFT method (Stop, Investigate the source, Find better coverage, Trace claims).
+
 
 ## Contents
 
+- [GitHub repository](https://github.com/hladek/sift-discussion) 
+- [Download repository ZIP](https://github.com/hladek/sift-discussion/archive/HEAD.zip)
 - [The presentation](./presentation)
 - `skills/sift-discussion/SKILL.md` – the skill (instructions and output format)
 - `skills/sift-discussion/references/manipulation-techniques.md` – reference list of rhetorical/manipulation techniques
@@ -14,3 +18,6 @@ ChatGPT Skill that helps with assessment of facts in political discussions, base
 3. In a chat, paste a message or claim from a discussion and ask e.g. "Assess this claim" (or invoke the skill by name, `sift-discussion`).
 
 If skills are unavailable in your plan, paste the body of `SKILL.md` into a Custom GPT's instructions or a chat as a prompt and upload the reference file as knowledge.
+
+
+[![METACOG project banner](https://ulysseus.eu/wp-content/uploads/2025/03/Metacog-1300X260.svg)](https://ulysseus.eu/metacog/)
